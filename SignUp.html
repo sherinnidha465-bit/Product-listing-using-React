@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form class="form-container" onsubmit="handleSignup(event)">
+        <h2>Sign Up</h2>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="phone" placeholder="10-digit Phone" pattern="[0-9]{10}" required>
+        <input type="text" id="city" placeholder="City" pattern="[A-Za-z]+" required>
+        <input type="password" id="password" placeholder="Password (8+ chars, alphanumeric)" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <button type="button" onclick="togglePassword()">Show/Hide</button>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="SignIn.html">Sign In</a></p>
+    </form>
+
+   <label for="city">City</label>
+   <input type="text" id="city" placeholder="City" oninput="validateCity(this)">
+   <span id="city-error" class="error-msg">City must contain only alphabets!</span>
+   
+
+    <script src="js/index.js"></script>
+</body>
+</html>

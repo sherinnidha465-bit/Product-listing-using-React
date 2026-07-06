@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wayfarer| Global Travel App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Wayfarer<span> Road</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Explore the World</h1>
+                <p class="tagline">Find Your Path, Leave Your Mark</p>
+                <a href="#destinations" class="cta-btn">Start Journey</a>
+            </div>
+        </section>
+                    
+        <section class="container" id="destinations">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Touch an image to see details, click to visit the destination page.</p>
+            </div>
+
+            <div class="dest-grid">
+                <a href="bali-details.html" class="dest-card">
+                    <img src="https://www.outlooktravelmag.com/media/bali-1-1679062958.profileImage.2x-1536x884.webp" alt="Bali">
+                    <div class="dest-overlay">
+                        <h3>Bali, Indonesia</h3>
+                        <div class="detail-text"><p>Tropical temples and stunning beaches.</p></div>
+                    </div>
+                </a>
+
+                <a href="venice-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500" alt="Venice">
+                    <div class="dest-overlay">
+                        <h3>Venice, Italy</h3>
+                        <div class="detail-text"><p>Romantic canals and historic gondolas.</p></div>
+                    </div>
+                </a>
+
+                <a href="kyoto-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500" alt="Kyoto">
+                    <div class="dest-overlay">
+                        <h3>Kyoto, Japan</h3>
+                        <div class="detail-text"><p>Cherry blossoms and ancient shrines.</p></div>
+                    </div>
+                </a>
+
+                <a href="santorini-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=500" alt="Santorini">
+                    <div class="dest-overlay">
+                        <h3>Santorini, Greece</h3>
+                        <div class="detail-text"><p>Iconic white cliffs and sunsets.</p></div>
+                    </div>
+                </a>
+
+                <a href="maldives-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=500" alt="Maldives">
+                    <div class="dest-overlay">
+                        <h3>The Maldives</h3>
+                        <div class="detail-text"><p>Luxury overwater bungalow paradise.</p></div>
+                    </div>
+                </a>
+
+                <a href="paris-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" alt="Paris">
+                    <div class="dest-overlay">
+                        <h3>Paris, France</h3>
+                        <div class="detail-text"><p>The city of light, art, and romance.</p></div>
+                    </div>
+                </a>
+
+                <a href="nyc-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=500" alt="NYC">
+                    <div class="dest-overlay">
+                        <h3>New York, USA</h3>
+                        <div class="detail-text"><p>The vibrant city that never sleeps.</p></div>
+                    </div>
+                </a>
+
+                <a href="swiss-details.html" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500" alt="Switzerland">
+                    <div class="dest-overlay">
+                        <h3>Swiss Alps</h3>
+                        <div class="detail-text"><p>Breathtaking mountain peaks and skiing.</p></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wayfarer Road Travel Guide</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+</html>
