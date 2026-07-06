@@ -46,3 +46,8 @@ function validateCity(input) {
     }
 }
 
+function handleSignup(event) {
+    event.preventDefault();
+    alert("Signup function triggered!");
+    // Your actual storage logic goes here
+}
